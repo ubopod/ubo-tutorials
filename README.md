@@ -12,17 +12,17 @@ To connect with VScode Remote Tunnel, go to your device `Settings`, choose `Remo
 
 Once you connect to your pod, open a terminal and following the steps below:
 
-1. Make custom_services directoty in ubo user's home:
+1. Make ubo_services directoty in ubo user's home:
 
 ``` sh
 > sudo su ubo
-> mkdir /ubo/home/custom_services
-> cd ubo/home/custom_services
+> mkdir /ubo/home/ubo_services
+> cd ubo/home/ubo_services
 ```
 
-`ubo/home/custom_services` is the default directory that hold custom services/apps. If you want to place your services somewhere else you can simply create a symlink to point to this directory.  
+`ubo/home/ubo_services` is the default directory that hold custom services/apps. If you want to place your services somewhere else you can simply create a symlink to point to this directory.  
 
-In our first example, we are going to write a simple service that create a `hello.txt` file in `/tmp/` and writes `hello world` line into it as soon as Ubo app loads. To do this, create `ubo_handle.py` file in custom_services directory that the following content:
+In our first example, we are going to write a simple service that create a `hello.txt` file in `/tmp/` and writes `hello world` line into it as soon as Ubo app loads. To do this, create `ubo_handle.py` file in ubo_services directory that the following content:
 
 ```
 def setup():
