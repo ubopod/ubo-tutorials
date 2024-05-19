@@ -81,7 +81,7 @@ def setup():
     helloworld_main_menu = ActionItem(
         label='helloworld',
         icon='[color=#008100]\ue007[/color]',
-        action=print,
+        action=lambda print,
     )
     dispatch(RegisterRegularAppAction(menu_item=helloworld_main_menu))
 
