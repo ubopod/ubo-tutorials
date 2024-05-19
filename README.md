@@ -41,7 +41,7 @@ This essentially defines the function that runs when the main app starts and reg
 After you make this change, run the following command to kill and restart `ubo_app`:
 
 ```sh
-> kill -9 ubo_app
+> killall -9 ubo_app
 ```
 
 After app restarts, you can check /tmp/hello.txt file content and see that "hello world" line was indeed written into the file.
@@ -59,7 +59,7 @@ To do this we need into import several items inside `setup()` function.
 from ubo_app.store.main import RegisterRegularAppAction
 ``
 
-By using `RegisterRegularAppAction` we can register the action entry point inside `Settings->Apps` section of the Ubo app. If you want to add a service under `Settings` (instead of `Apps` section), you need to import and use  `RegisterSettingAppAction` instead.
+By using `RegisterRegularAppAction` we can register the action entry point inside `Menu->Apps` section of the Ubo app. If you want to add a service under `Settings` (instead of `Apps` section), you need to import and use  `RegisterSettingAppAction` instead.
 
 ```
 from ubo_gui.menu.types import ActionItem
