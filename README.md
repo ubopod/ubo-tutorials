@@ -3,6 +3,10 @@
 When designing Ubo pod and its software stack, we wanted to ensure that other developers can easily build their applications 
 with system modules and libraries. 
 
+# Setup
+
+I highly recommend using VScode with Remote Tunnel for development on Ubo Pod. Setting it up is breeze. All you need to do is to go to `Menu->Settings->Remote-VSCode` on your pod and follow the instruction to login and connect remotely. After connecting with VSCode, ensure you install `Pylance` and `Ruff` extensions to enable type checking and linting. 
+
 # hello world
 
 To begin developing on your Ubo pod, you need to first connect to it. We can do this easily with `ssh` or VScode Remote Tunnel which is offered out of the box. We recommend VScode Remote Tunnel since it allows you to take full advantage of VScode capabilities and allow remote access even if you are not on the same network. 
